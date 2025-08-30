@@ -9,6 +9,14 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+// Custom pagination styles
+const paginationStyles = {
+  '--swiper-pagination-color': '#FF66C4',   
+  '--swiper-pagination-bullet-inactive-color': '#D1D5DB', 
+  '--swiper-pagination-bullet-size': '12px',
+  '--swiper-pagination-bullet-horizontal-gap': '6px',
+} as React.CSSProperties;
+
 const classData = [
   {
     id: 1,
@@ -32,6 +40,13 @@ const classData = [
     image: 'team/3.png'
   },
   {
+    id: 5,
+    title: 'Luisa Mora',
+    designation: 'Co-founder & COO',
+    description: 'Early Childhood Consultant ExpertCurriculum developer Behavior Technician (Training)',
+    image: 'team/2.png'
+  },
+  {
     id: 4,
     title: 'Luisa Mora',
     designation: 'Co-founder & COO',
@@ -52,7 +67,13 @@ export default function Team() {
         spaceBetween={30}
         slidesPerView={1.2}
         navigation={false}
-        pagination={{ clickable: true }}
+        pagination={{ 
+          clickable: true,
+          el: '.team-pagination',
+          bulletClass: 'team-pagination-bullet',
+          bulletActiveClass: 'team-pagination-bullet-active'
+        }}
+        style={paginationStyles}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -67,7 +88,7 @@ export default function Team() {
             spaceBetween: 30,
           },
         }}
-        className="team-slider"
+        className="relative"
       >
         {classData.map((classItem) => (
           <SwiperSlide key={classItem.id} className='pb-12'>
@@ -87,7 +108,10 @@ export default function Team() {
             </div>
           </SwiperSlide>
         ))}
+        <div className="team-pagination flex justify-center gap-2 "></div>
       </Swiper>
+
+    
     </section>
   );
 }

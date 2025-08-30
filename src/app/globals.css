@@ -18,6 +18,8 @@
   }
 }
 
+
+
 .custom-shape-divider-bottom-1755366561 {
   position: absolute;
   bottom: 0;
@@ -73,4 +75,22 @@
   color: #FF66C4;
   border: 1px solid #FF66C4;
   border-radius: 6px;
+}
+
+.team-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #D1D5DB;
+  border-radius: 50%;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.team-pagination-bullet-active {
+  background-color: #FF66C4;
+  transform: scale(1.2);
+}
+.team-pagination {
+  position: relative;
+  z-index: 10;
 }
