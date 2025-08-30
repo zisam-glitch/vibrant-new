@@ -8,7 +8,7 @@ export default function Qualitiest() {
         <div className='flex flex-col md:items-start items-center md:text-start text-center'>
           <h4 className='text-4xl text-[#FF66C4] '>Our Mission</h4>
           <div className='w-50 my-4 h-[4px] bg-[#FFD600]'></div>
-          <p className='text-lg'>Our mission is to guide and support home-based providers with professional support and a strategically designed curriculum that will support children's behavioral and academic development. We aim to get children under five years old ready for school. We aim to catch any early signs of delayment and intervene, by being the bridge of communication between interventionists, caregivers, and parents by altering the curriculum, especially for that child. We aim to focus on our assessments to differentiate activities for individuals in care, where the provider will receive certified training from our experts.</p>
+          <p className='text-lg'>Our mission is to guide and support home-based providers with professional support and a strategically designed curriculum that will support children&apos;s behavioral and academic development. We aim to get children under five years old ready for school. We aim to catch any early signs of delayment and intervene, by being the bridge of communication between interventionists, caregivers, and parents by altering the curriculum, especially for that child. We aim to focus on our assessments to differentiate activities for individuals in care, where the provider will receive certified training from our experts.</p>
         </div>
         <div className='md:pl-20 pl-0'>
           <Image src="/classes/9.png" alt="" width={800} height={800} />

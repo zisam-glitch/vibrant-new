@@ -56,7 +56,7 @@ export default function Qualitiest() {
           <div className='flex flex-col items-center justify-center text-center text-[#710A85] gap-2 px-8 py-6 rounded-lg bg-[#ff66c426] border border-[#ff66c433]'>
             <p className='text-lg font-bold pt-2'>Why Choose Us?
             </p>
-            <p>Dynamic Circle Time Activities Boost literacy, creativity, and social-emotional skills in a fun, small-group setting. Professional Staff Training Enhance your team's teaching strategies with expert-led workshops. Trusted and Verified Fingerprinted educator with years of experience in early childhood education.</p>
+            <p>Dynamic Circle Time Activities Boost literacy, creativity, and social-emotional skills in a fun, small-group setting. Professional Staff Training Enhance your team&apos;s teaching strategies with expert-led workshops. Trusted and Verified Fingerprinted educator with years of experience in early childhood education.</p>
           </div>
           <div className='flex flex-col items-center justify-center text-center text-[#710A85] gap-2 px-8 py-6 rounded-lg bg-[#ff66c426] border border-[#ff66c433]'>
             <p className='text-lg font-bold pt-2'>What’s Included?

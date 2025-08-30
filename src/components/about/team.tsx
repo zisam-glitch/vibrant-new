@@ -38,13 +38,6 @@ const classData = [
     description: 'Early Childhood Consultant ExpertCurriculum developer Behavior Technician (Training)',
     image: 'team/4.png'
   },
-  {
-    id: 5,
-    title: 'Luisa Mora',
-    designation: 'Co-founder & COO',
-    description: 'Early Childhood Consultant ExpertCurriculum developer Behavior Technician (Training)',
-    image: 'team/4.png'
-  },
 ];
 
 export default function Team() {
@@ -53,41 +46,48 @@ export default function Team() {
       <div className='text-center md:w-[40%] w-full mx-auto md:mb-16 mb-8'>
         <h2 className='md:text-4xl text-[#FF66C4] text-2xl'>Meet the Team</h2>
       </div>
-
+      
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={30}
         slidesPerView={1.2}
         navigation={false}
-        pagination={false}
+        pagination={{ clickable: true }}
         breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
         }}
-        style={{
-          overflow: 'hidden',
-        }}
+        className="team-slider"
       >
         {classData.map((classItem) => (
-          <SwiperSlide key={classItem.id}>
-            <div>
-              <Image
-                src={`/${classItem.image}`}
-                alt={classItem.title}
-                width={800}
-                height={800}
-                className="w-full h-auto rounded-lg"
+          <SwiperSlide key={classItem.id} className='pb-12'>
+            <div className='h-full'>
+              <Image 
+                src={`/${classItem.image}`} 
+                alt={classItem.title} 
+                width={300} 
+                height={400}
+                className='w-full h-auto rounded-lg object-cover'
               />
-              <div className="flex flex-col gap-1 py-4">
-                <p className="md:text-lg text-sm">{classItem.title}</p>
-                <p className="md:text-lg text-sm font-bold">{classItem.designation}</p>
-                <p className="md:text-lg text-sm">{classItem.description}</p>
+              <div className='flex flex-col gap-1 py-4'>
+                <p className='text-lg'>{classItem.title}</p>
+                <p className='text-lg font-bold'>{classItem.designation}</p>
+                <p className='text-sm text-gray-600'>{classItem.description}</p>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
     </section>
   );
 }
