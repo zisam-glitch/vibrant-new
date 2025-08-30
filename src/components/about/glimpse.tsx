@@ -81,7 +81,7 @@ export default function Glimpse() {
         </div>
 
         {/* Mobile View - Accordion */}
-        <div className='md:hidden space-y-4 pt-6 pb-24'>
+        <div className='md:hidden space-y-4 pt-6 pb-16'>
           {days.map((day, index) => (
             <div key={index} className='bg-[#D9D9D9] mb-1 rounded-lg overflow-hidden'>
               <button
