@@ -18,9 +18,9 @@ export default function subscriptions() {
       </div>
 
       <div className='max-w-7xl mx-auto md:px-12 px-4 md:py-36 py-28 grid md:grid-cols-2 grid-cols-1 gap-10'>
-        <div className='flex flex-col justify-between' >
-          <h2 className='text-4xl text-[#FF66C4]'>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
-          <div className='flex flex-col gap-4 w-1/2' >
+        <div className='flex flex-col justify-between text-center md:text-start' >
+          <h2 className='md:text-4xl text-3xl text-[#FF66C4]'>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+          <div className='md:flex hidden flex-col gap-4 w-1/2' >
           <button className='flex items-center gap-2 py-4 px-6 text-[#fff] rounded-lg cursor-pointer '>
             <Image src="/EnvelopeFill.svg" alt="" width={16} height={16} />
             <p className='leading-none'>info@vibrantminds.com</p>

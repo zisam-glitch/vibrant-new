@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
   return (
     <>
       <section className=" relative bg-[#FFD600] flex items-center justify-center overflow-hidden">
-        <div className="max-w-7xl px-4 py-16 md:px-12 md:pt-40 pb-52 grid grid-cols-2 gap-20 justify-center items-center">
+        <div className="max-w-7xl px-8 py-24 md:px-12 md:pt-40 md:pb-52 pb-20 grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 justify-center items-center">
 
-          <div className="flex flex-col gap-6 pr-20">
-            <h1 className="text-5xl text-[#ff66c4] leading-[1.2]">Vibrant Mind <br />Consulting Services</h1>
+          <div className="flex flex-col text-center md:text-left gap-6 md:pr-20 pr-0">
+            <h1 className="md:text-5xl text-4xl text-[#ff66c4] leading-[1.2]">Vibrant Mind <br />Consulting Services</h1>
             <p className="text-lg">We custom design bulletin boards to fit your ideal vision!
               Our team will reach out to you within 24 hours with different design visuals to choose from. Once the client is satisfied with the design, our production team will begin to prepare the materials.
             </p>

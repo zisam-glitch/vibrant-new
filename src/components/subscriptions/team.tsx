@@ -11,7 +11,7 @@ export default function Team() {
           <h2 className='md:text-4xl text-[#fff] text-2xl'>Appropriate ages 15 months to 4 years old</h2>
         </div>
         <div className='px-8 pb-8'>
-          <div className='px-12 py-8 bg-[#fff] rounded-lg flex flex-col gap-4'>
+          <div className='md:px-12 px-4 py-8 bg-[#fff] rounded-lg flex flex-col gap-4'>
             <div className='grid grid-cols-3 text-center'>
               <h4></h4>
               <h4 className='text-[#FF66C4]'>Basic <br />
