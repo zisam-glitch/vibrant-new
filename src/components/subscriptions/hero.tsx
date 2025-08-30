@@ -9,18 +9,13 @@ const HeroVideo: React.FC = () => {
     <>
     <section className="relative w-full md:h-[850px] h-[650px] flex items-center justify-center overflow-hidden">
       {/* Background Video */}
-      <video
+      <Image
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="/hero.mp4" // place your video inside /public/videos/
-        autoPlay
-        loop
-        muted
-        playsInline
+        src="/subscriptionHero.png" // place your video inside /public/videos/
+        alt=""
+        width={1920}
+        height={1080}
       />
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
-
       {/* Content */}
       <div className="max-w-5xl mx-auto relative md:w-[45%] w-[calc(100%-32px)] bg-[#ffffffcc] z-10 m-4 p-8 rounded-2xl text-center md:text-start">
         <h1 className="text-4xl md:text-5xl text-[#FF66C4] font-bold mb-4">
@@ -34,7 +29,8 @@ const HeroVideo: React.FC = () => {
           Join Now
         </button>
       </div>
-      <Image src="/shapes/wave.svg" alt="Wave" width={1920} height={200} className="w-full bottom-0 2xl:hidden md:block absolute z-9" />
+      <Image src="/shapes/about.svg" alt="Wave" width={1920} height={200} className="w-full bottom-0 2xl:hidden md:block hidden absolute z-9" />
+      <Image src="/shapes/cloudbottom2.svg" alt="Wave" width={768} height={200} className="w-full bottom-0 2xl:hidden md:hidden block absolute z-9" />
      
     </section>
      

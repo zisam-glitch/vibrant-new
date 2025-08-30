@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/poppins": "^5.2.6",
+    "@fontsource/righteous": "^5.2.6",
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-native-svg": "^15.12.1"
+    "react-native-svg": "^15.12.1",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

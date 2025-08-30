@@ -1,14 +1,24 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Righteous, Poppins } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const righteous = Righteous({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-righteous',
+});
+
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
-  title: 'Next.js App',
-  description: 'A modern Next.js application with TypeScript and Tailwind CSS',
+  title: 'Vibrent',
+  description: 'Vibrent - Your description here',
 };
 
 export default function RootLayout({
@@ -17,15 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body 
-        className={`${inter.className} min-h-screen flex flex-col`}
-        suppressHydrationWarning={true}
-      >
+    <html lang="en" className={`${righteous.variable} ${poppins.variable}`} cz-shortcut-listen="true">
+      <body className="font-sans">
         <Header />
-        <main className="">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

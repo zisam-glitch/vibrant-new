@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+  
+  p, ul, li, a, button, textarea, label, span{
+    font-family: var(--font-poppins), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, input {
+    font-family: var(--font-righteous), system-ui, sans-serif;
+  }
+}
+
 .custom-shape-divider-bottom-1755366561 {
   position: absolute;
   bottom: 0;
@@ -23,4 +37,40 @@
 
 .custom-shape-divider-bottom-1755366561 .shape-fill {
   fill: #FFFFFF;
+}
+
+.button {
+  float: left;
+  margin: 10px 10px 10px 0px;
+  height: 40px;
+  position: relative;
+}
+
+.button label,
+.button input {
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.button input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.button input[type="radio"]:checked + label {
+  background: #FF66C4;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid #FF66C4;
+
+}
+
+.button label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+  color: #FF66C4;
+  border: 1px solid #FF66C4;
+  border-radius: 6px;
 }
