@@ -25,7 +25,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/1.png",
+    image: "/classes/1.png",
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/2.png",
+    image: "/classes/2.png",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/3.png",
+    image: "/classes/3.png",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/4.png",
+    image: "/classes/4.png",
   },
   {
     id: 5,
@@ -61,7 +61,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/5.png",
+    image: "/classes/5.png",
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/1.png",
+    image: "/classes/1.png",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/2.png",
+    image: "/classes/2.png",
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ const classData: ClassItem[] = [
     age: "3-5 years",
     time: "8-10 am",
     capacity: "30 Kids",
-    image: "classes/3.png",
+    image: "/classes/3.png",
   },
 ];
 

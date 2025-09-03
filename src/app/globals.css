@@ -9,11 +9,11 @@
     font-family: var(--font-poppins), system-ui, sans-serif;
   }
   
-  p, ul, li, a, button, textarea, label, span{
+  p, ul, li, a, button, textarea, label, span, input{
     font-family: var(--font-poppins), system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6, input {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-righteous), system-ui, sans-serif;
   }
 }

@@ -1,7 +1,16 @@
+'use client';
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 
-export default function subscriptions() {
+export default function Subscriptions() {
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    router.push('/booking');
+  };
+
   return (
     <section className='relative bg-[#FFD600] my-16'>
       <div className='w-full absolute -top-[0%] 2xl:hidden md:block hidden'>
@@ -38,7 +47,7 @@ export default function subscriptions() {
         <div className='p-8 bg-[#ffffffcc] rounded-lg'>
           <div>
             <p className='text-xl'>I’m interested in...</p>
-            <form className='s flex flex-col gap-8' action="">
+            <form className='s flex flex-col gap-8' onSubmit={handleSubmit}>
               <div>
                 <div className="button">
                   <input type="radio" id="a25" name="check-substitution-2" />
@@ -62,14 +71,13 @@ export default function subscriptions() {
                 </div>
               </div>
               <div className='flex flex-col gap-6'>
-                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="text" placeholder='Full Name' />
-                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="email" placeholder='Email' />
-                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="tel" placeholder='Phone' />
+                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="text" placeholder='Full Name' required />
+                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="email" placeholder='Email' required />
+                <input className='py-2 border-b-[#FF66C4] border-b-3 focus:border-[#A91079] focus:outline-none ' type="tel" placeholder='Phone' required />
                 <div>
-                  <button className='bg-[#FF66C4] text-[#fff] px-6 py-3 cursor-pointer rounded-sm hover:bg-[#FF66C4]/80 transition'>Book now</button></div>
+                <button type="submit" className='bg-[#FF66C4] text-[#fff] px-6 py-3 cursor-pointer rounded-sm hover:bg-[#FF66C4]/80 transition'>Book now</button>
+                </div>
               </div>
-             
-
             </form>
           </div>
         </div>
